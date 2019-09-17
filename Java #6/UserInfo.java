@@ -1,13 +1,15 @@
 public class UserInfo{
   //globals
   private String userId;
-  private String fullName;
+  private String firstName;
+  private String lastName;
   private int version;
   private String company;
 
-  UserInfo(String userId, String fullName, int version, String company){
+  UserInfo(String userId, String firstName, String lastName, int version, String company){
     this.userId = userId;
-    this.fullName = fullName;
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.version = version;
     this.company = company;
   }
@@ -17,7 +19,15 @@ public class UserInfo{
   }
 
   public String getFullName() {
-    return this.fullName;
+    return (this.firstName + " " + this.lastName);
+  }
+
+  public String getFirstName() {
+    return this.firstName;
+  }
+
+  public String getLastName() {
+    return this.lastName;
   }
 
   public int getVersion() {

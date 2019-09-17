@@ -32,7 +32,8 @@ public class AvailityTest{
       while(inputStream.hasNext()){
         String dataLine = inputStream.nextLine();
         String[] lineValues = dataLine.split(",");
-        UserInfo userInfo = new UserInfo(lineValues[0].trim(), lineValues[1].trim(), Integer.parseInt(lineValues[2].trim()), lineValues[3].trim());
+        String[] names = lineValues[1].trim().split(" ");
+        UserInfo userInfo = new UserInfo(lineValues[0].trim(), names[0].trim(), names[1].trim(), Integer.parseInt(lineValues[2].trim()), lineValues[3].trim());
         String userKey = userInfo.getUserId()+userInfo.getCompany();
 
         //Removes duplicates for same userId with same insurance company
@@ -59,7 +60,12 @@ public class AvailityTest{
     while(sorted == false){
       sorted = true;
       for(int i=1; i < users.length; i++){
-        if(users[i].getFullName().compareTo(users[i-1].getFullName()) < 0){
+        if(users[i].getLastName().compareTo(users[i-1].getLastName()) < 0){
+          sorted = false;
+          UserInfo temp = users[i];
+          users[i] = users[i-1];
+          users[i-1] = temp;
+        }else if(users[i].getLastName().equals(users[i-1].getLastName()) && users[i].getFirstName().compareTo(users[i-1].getFirstName()) < 0){
           sorted = false;
           UserInfo temp = users[i];
           users[i] = users[i-1];
