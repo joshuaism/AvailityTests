@@ -6,7 +6,7 @@ My proudest professional achievement is a method I wrote to draw a string of tex
 
 # 2. Tell me about something you have read recently that you would recommend and why. (Can be a Github Repo, Article, Blog, Book, etc) 
 
-I recently read https://github.com/Dagnis8/AvailityTests. It provided my solutions for questions 4, 5, and 6.  Coding is labor and if I'm not hired then doing your coding test is free labor. A github search reveals a number of people have unnecessarily duplicated effort towards this same goal so I'm glad to free myself from tackling a solved problem and can devote my time to making something new and useful. Sure I wish Dagnis8 had written some unit tests, input validation, or included a public license, but I'm not going to fault them for doing the minimum work for minimum pay. That's an important skill, just like knowing how to avoid scope-creep.
+I recently read https://github.com/Dagnis8/AvailityTests. It provided my solutions for questions 4, 5, and 6.  Coding is labor and if I'm not hired then doing your coding test is free labor. A github search reveals a number of people have unnecessarily duplicated effort towards this same goal so I'm glad to free myself from tackling a solved problem and can devote my time to making something new and useful. Sure I wish Dagnis8 had written some unit tests, input validation, or included a public license, but I'm not going to fault them for doing the minimum work for minimum pay. That's an important skill, just like giving credit where credit is due and knowing how to avoid scope-creep.
 
 # 3. How would you explain what Availity does to your grandmother? 
 
